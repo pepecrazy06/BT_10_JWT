@@ -1,0 +1,3 @@
+### GET request to example server
+POST http://localhost:8005/auth/login
+###

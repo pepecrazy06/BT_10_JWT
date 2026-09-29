@@ -1,0 +1,18 @@
+### 1. Dang nhap lay token
+POST http://localhost:8005/auth/login
+Content-Type: application/json
+
+{
+  "email": "cuocsongchanai10@gmail.com",
+  "password": "12345678"
+}
+
+### 2. Xem ho so
+GET http://localhost:8005/users/me
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJqd3QtY2xhc3MtZGVtbyIsInN1YiI6ImN1b2Nzb25nY2hhbmFpMTBAZ21haWwuY29tIiwiZXhwIjoxNzkwNjUwMzk5LCJpYXQiOjE3OTA2NDY3OTksImp0aSI6IjEzOTI5MWFlLWE3ZmEtNDE1MC1hY2U3LTllOGRjOWFmMjk5NCJ9.DRn96yPKGupv4qDBRIfaIo2GIn2cGgJqeKCN0vT6x0Q
+
+### 3. Xem danh sach nguoi dung
+GET http://localhost:8005/users/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJqd3QtY2xhc3MtZGVtbyIsInN1YiI6ImN1b2Nzb25nY2hhbmFpMTBAZ21haWwuY29tIiwiZXhwIjoxNzkwNjUwMzk5LCJpYXQiOjE3OTA2NDY3OTksImp0aSI6IjEzOTI5MWFlLWE3ZmEtNDE1MC1hY2U3LTllOGRjOWFmMjk5NCJ9.DRn96yPKGupv4qDBRIfaIo2GIn2cGgJqeKCN0vT6x0Q
+### Test khong gui token
+GET http://localhost:8005/users/me
